@@ -328,6 +328,7 @@ static const u8 dp_link_config_priority[][2] = {
 void dp_lt_init(struct dp_lt_data *lt_data, void *drv_data);
 void dp_lt_set_pending_evt(struct dp_lt_data *lt_data);
 void dp_lt_force_disable(struct dp_lt_data *lt_data);
+void dp_lt_force_trigger(struct dp_lt_data *lt_data);
 unsigned long dp_lt_wait_for_completion(struct dp_lt_data *lt_data,
 			u8 target_state, unsigned long timeout_ms);
 u8 dp_get_lt_state(struct dp_lt_data *lt_data);
